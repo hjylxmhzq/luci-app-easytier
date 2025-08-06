@@ -5,7 +5,10 @@ m = Map("easytier")
 m.description = translate("A simple, secure, decentralized VPN solution for intranet penetration, implemented in Rust using the Tokio framework. "
         .. "Project URL: <a href=\"https://github.com/EasyTier/EasyTier\" target=\"_blank\">github.com/EasyTier/EasyTier</a>&nbsp;&nbsp;"
         .. "<a href=\"http://easytier.cn\" target=\"_blank\">Official Documentation</a>&nbsp;&nbsp;"
-        .. "<a href=\"http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=jhP2Z4UsEZ8wvfGPLrs0VwLKn_uz0Q_p&authKey=OGKSQLfg61YPCpVQuvx%2BxE7hUKBVBEVi9PljrDKbHlle6xqOXx8sOwPPTncMambK&noverify=0&group_code=949700262\" target=\"_blank\">QQ Group</a>&nbsp;&nbsp;"
+        .. "<a href=\"http://qm.qq.com/cgi-bin/qm/qr?_wv=102btn8info.cfgvalue = function(self, section)
+    local content = nixio.fs.readfile("/tmp/easytier-cli_route") or ""
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
+endjhP2Z4UsEZ8wvfGPLrs0VwLKn_uz0Q_p&authKey=OGKSQLfg61YPCpVQuvx%2BxE7hUKBVBEVi9PljrDKbHlle6xqOXx8sOwPPTncMambK&noverify=0&group_code=949700262\" target=\"_blank\">QQ Group</a>&nbsp;&nbsp;"
         .. "<a href=\"https://doc.oee.icu\" target=\"_blank\">Beginner Tutorial</a>")
 
 m:section(SimpleSection).template  = "easytier/easytier_status"
@@ -443,7 +446,7 @@ btn0info = s:taboption("infos", DummyValue, "btn0info")
 btn0info.rawhtml = true
 btn0info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_node") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn1 = s:taboption("infos", Button, "btn1")
@@ -462,7 +465,7 @@ btn1info = s:taboption("infos", DummyValue, "btn1info")
 btn1info.rawhtml = true
 btn1info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_peer") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn2 = s:taboption("infos", Button, "btn2")
@@ -481,7 +484,7 @@ btn2info = s:taboption("infos", DummyValue, "btn2info")
 btn2info.rawhtml = true
 btn2info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_connector") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn3 = s:taboption("infos", Button, "btn3")
@@ -500,7 +503,7 @@ btn3info = s:taboption("infos", DummyValue, "btn3info")
 btn3info.rawhtml = true
 btn3info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_stun") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 
@@ -520,7 +523,7 @@ btn4info = s:taboption("infos", DummyValue, "btn4info")
 btn4info.rawhtml = true
 btn4info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_route") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn6 = s:taboption("infos", Button, "btn6")
@@ -539,7 +542,7 @@ btn6info = s:taboption("infos", DummyValue, "btn6info")
 btn6info.rawhtml = true
 btn6info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_peer-center") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn7 = s:taboption("infos", Button, "btn7")
@@ -558,7 +561,7 @@ btn7info = s:taboption("infos", DummyValue, "btn7info")
 btn7info.rawhtml = true
 btn7info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_vpn-portal") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn8 = s:taboption("infos", Button, "btn8")
@@ -577,7 +580,7 @@ btn8info = s:taboption("infos", DummyValue, "btn8info")
 btn8info.rawhtml = true
 btn8info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_proxy") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn9 = s:taboption("infos", Button, "btn9")
@@ -596,7 +599,7 @@ btn9info = s:taboption("infos", DummyValue, "btn9info")
 btn9info.rawhtml = true
 btn9info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_acl") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn10 = s:taboption("infos", Button, "btn10")
@@ -615,7 +618,7 @@ btn10info = s:taboption("infos", DummyValue, "btn10info")
 btn10info.rawhtml = true
 btn10info.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier-cli_mapped_listener") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btn5 = s:taboption("infos", Button, "btn5")
@@ -634,7 +637,7 @@ btn5cmd = s:taboption("infos", DummyValue, "btn5cmd")
 btn5cmd.rawhtml = true
 btn5cmd.cfgvalue = function(self, section)
     local content = nixio.fs.readfile("/tmp/easytier_cmd") or ""
-    return string.format("<pre>%s</pre>", luci.util.pcdata(content))
+    return string.format("<pre>%s</pre>", luci.xml.pcdata(content))
 end
 
 btnrm = s:taboption("infos", Button, "btnrm")

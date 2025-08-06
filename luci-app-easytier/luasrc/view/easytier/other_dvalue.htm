@@ -2,7 +2,7 @@
 <span style="color: red">
 <%
 	local val = self:cfgvalue(section) or self.default or ""
-	write(pcdata(val))
+	write(luci.xml.pcdata(val))
 %>
 </span>
 <%+cbi/valuefooter%>
